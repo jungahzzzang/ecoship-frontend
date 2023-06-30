@@ -1,1 +1,0 @@
-# ecoship-frontend
