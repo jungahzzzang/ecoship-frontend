@@ -73,4 +73,3 @@ function Sidebar({handleLinkOnClick}) {
 }
 
 export default Sidebar;
-

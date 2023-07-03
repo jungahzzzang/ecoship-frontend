@@ -15,9 +15,9 @@ const Homelayout = styled.section`
 
 function HomeLayout() {
     return (
-        <HomeLayout>
-            <HomeNav></HomeNav>
-        </HomeLayout>
+        <Homelayout>
+            
+        </Homelayout>
     );
 }
 

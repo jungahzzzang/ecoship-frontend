@@ -72,7 +72,7 @@ const Logo = styled(Link)`
         <Headerbox>
             <Menu onClick={onclickHandle}/>
             <Sidebar handleLinkOnClick={onclickHandleLink} />
-            <Logo to="/">ecoship</Logo>
+            {/* <Logo to="/">ecoship</Logo> */}
         </Headerbox>
     )
  };

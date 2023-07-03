@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 import Header from './components/Header';
+import HomeNav from './components/HomeNav';
 
 import HomePage from './page/HomePage';
 
@@ -26,7 +27,8 @@ function App() {
         <>
           <BrowserRouter>
             <StyledApp>
-              <Header />
+              {/* <Header /> */}
+              <HomeNav />
               <StyledCoontent>
                 <Routes>
                   <Route path="/" element={<HomePage />}/>
