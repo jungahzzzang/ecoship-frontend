@@ -1,5 +1,10 @@
+body {
+  font-family: 'SUITE-Regular';
+}
+
 .App {
   text-align: center;
+  font-family: 'TTWanjudaedunsancheB';
 }
 
 .App-logo {
@@ -35,4 +40,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* 폰트 */
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('./assets/fonts/SUITE-Regular.ttf') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'TTWanjudaedunsancheB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
 }

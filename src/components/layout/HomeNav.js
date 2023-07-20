@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../assets/images/logo/ecoship_logo.png';
+import logo from '../../assets/images/logo/ecoship_logo.png';
 
 const HomeNav = () => {
 
@@ -10,7 +10,7 @@ const HomeNav = () => {
       <Navbar bg="light" data-bs-theme="light">
         <Container>
           <Navbar.Brand href="#home">
-            <img src={logo} className='App-logo' width="140" height="80"/>
+            <img src={logo} className='App-logo' width={160} height={40}/>
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>

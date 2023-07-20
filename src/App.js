@@ -2,8 +2,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
-import Header from './components/Header';
-import HomeNav from './components/HomeNav';
+import Header from './components/layout/Header';
+import LoginPage from './page/member/LoginPage';
 
 import HomePage from './page/HomePage';
 
@@ -21,17 +21,16 @@ const StyledCoontent = styled.div`
 `;
 
 function App() {
-   const [hello, setHello] = useState('')
 
     return (
         <>
           <BrowserRouter>
             <StyledApp>
-              {/* <Header /> */}
-              <HomeNav />
+              <Header />
               <StyledCoontent>
                 <Routes>
                   <Route path="/" element={<HomePage />}/>
+                  <Route path="/login" element={<LoginPage />}/>
                 </Routes>
               </StyledCoontent>
             </StyledApp>

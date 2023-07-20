@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import logo from '../../assets/images/logo/ecoship_logo.png';
 
 const SidebarLayout = styled.nav`
   overflow: hidden;
@@ -57,7 +58,7 @@ function Sidebar({handleLinkOnClick}) {
         <>
             <SidebarLayout id="sidebar">
                 <LogoBox>
-                    <img src='assets/image/logo/ecoship_logo.png' alt='logo' />
+                    <img src={logo} alt='logo' />
                 </LogoBox>
                 <SidebarBox>
                     <StyledLink onClick={handleLinkOnClick} to={'/'}>
