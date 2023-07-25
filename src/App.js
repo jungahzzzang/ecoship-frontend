@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import axios from 'axios';
 import Header from './components/layout/Header';
 import LoginPage from './page/member/LoginPage';
-
+import KakaoLoginHandler from './components/login/KakaoLoginHandler';
 import HomePage from './page/HomePage';
 
 const StyledApp = styled.main`
@@ -31,6 +31,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<HomePage />}/>
                   <Route path="/login" element={<LoginPage />}/>
+                  <Route path="/login/oauth/kakao/callback" element={<KakaoLoginHandler/>}/>
                 </Routes>
               </StyledCoontent>
             </StyledApp>
