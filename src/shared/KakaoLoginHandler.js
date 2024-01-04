@@ -43,10 +43,9 @@ function KakaoLoginHandler() {
                     //     navigate('/', {replace: true});
                     // }
 
-                    if (res.data.success === true) {
+                    if (res.status === 200) {
                         navigate('/', {replace: true});
-                    }
-                    if (res.data.success === false) {
+                    }else{
                         window.alert("아이디 혹은 패스워드를 확인해주세요.");
                          navigate("/login");
                     }

@@ -16,7 +16,7 @@ const Homelayout = styled.section`
 function HomeLayout() {
     return (
         <Homelayout>
-            
+          메인입니다.
         </Homelayout>
     );
 }
